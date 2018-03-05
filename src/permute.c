@@ -43,17 +43,17 @@ long64 tb_size;
 static struct TBEntry_piece entry_piece;
 static struct TBEntry_pawn entry_pawn;
 
-static ubyte order_list[720];
-static ubyte order2_list[720];
+static ubyte order_list[5040];
+static ubyte order2_list[5040];
 
-static ubyte piece_perm_list[720][TBPIECES];
-static ubyte pidx_list[720][TBPIECES];
+static ubyte piece_perm_list[5040][TBPIECES];
+static ubyte pidx_list[5040][TBPIECES];
 
 static int num_types, num_type_perms;
 static ubyte type[TBPIECES];
-static ubyte type_perm_list[720][TBPIECES];
+static ubyte type_perm_list[5040][TBPIECES];
 
-static long64 compest[720];
+static long64 compest[5040];
 
 #define MAX_CANDS 30
 static int trylist[MAX_CANDS];
@@ -64,7 +64,7 @@ extern int numpcs;
 static int pw[TBPIECES];
 static int cmp[16];
 
-#if TBPIECES > 6
+#if TBPIECES > 7
 #error number of allocated permutations too small
 #endif
 
