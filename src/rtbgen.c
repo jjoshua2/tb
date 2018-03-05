@@ -200,7 +200,7 @@ static void calc_mates(struct thread_data *thread)
   bitboard occ, bb;
   int i;
   int n = numpcs;
-  assume(n >= 3 && n <= 6);
+  assume(n >= 3 && n <= 7);
   int p[MAX_PIECES];
   long64 end = thread->end;
 
