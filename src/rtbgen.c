@@ -175,7 +175,7 @@ static void calc_broken(struct thread_data *thread)
   long64 idx, idx2;
   int i;
   int n = numpcs;
-  assume(n >= 3 && n <= 6);
+  assume(n >= 3 && n <= 7);
   bitboard occ, bb;
   long64 end = thread->end;
 
