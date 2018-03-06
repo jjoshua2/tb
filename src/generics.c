@@ -351,7 +351,7 @@ static void func##_pivot1(ubyte *restrict table, long64 idx, bitboard occ, int *
   int p[MAX_PIECES]; \
   int pt2[MAX_PIECES]; \
   int n = numpcs; \
-  assume(n >= 3 && n <= 6); \
+  assume(n >= 3 && n <= 7); \
   long64 end = thread->end >> 6; \
   for (k = 0; k < n; k++) \
     pt2[k] = pt[k]; \
@@ -364,7 +364,7 @@ static void func##_pivot1(ubyte *restrict table, long64 idx, bitboard occ, int *
   int j, k; \
   int p[MAX_PIECES]; \
   int n = numpcs; \
-  assume(n >= 3 && n <= 6); \
+  assume(n >= 3 && n <= 7); \
   long64 end = thread->end >> 6
 
 #define LOOP_CAPTS \
@@ -398,7 +398,7 @@ static void func##_pivot1(ubyte *restrict table, long64 idx, bitboard occ, int *
   int j, k; \
   int p[MAX_PIECES]; \
   int n = numpcs; \
-  assume(n >= 3 && n <= 6); \
+  assume(n >= 3 && n <= 7); \
   long64 end = thread->end
 
 #define LOOP_CAPTS_PIVOT1 \
@@ -471,7 +471,7 @@ static void func##_pivot1(ubyte *restrict table, long64 idx, bitboard occ, int *
   bitboard occ; \
   int i; \
   int n = numpcs; \
-  assume(n >= 3 && n <= 6); \
+  assume(n >= 3 && n <= 7); \
   int p[MAX_PIECES]; \
   long64 end = thread->end;
 
