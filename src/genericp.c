@@ -269,7 +269,7 @@ static void func(int k, ubyte *restrict table, long64 idx, bitboard occ, int *re
   int pt2[MAX_PIECES]; \
   bitboard occ, bb; \
   int n = numpcs; \
-  assume(n >= 2 && n <= 6); \
+  assume(n >= 2 && n <= 7); \
   long64 end = thread->end >> 6; \
   for (k = 0; k < n; k++) \
     pt2[k] = pt[k]; \
@@ -282,7 +282,7 @@ static void func(int k, ubyte *restrict table, long64 idx, bitboard occ, int *re
   int p[MAX_PIECES]; \
   bitboard occ, bb; \
   int n = numpcs; \
-  assume(n >= 2 && n <= 6); \
+  assume(n >= 2 && n <= 7); \
   long64 end = thread->end >> 6
 
 #ifndef SUICIDE
@@ -294,7 +294,7 @@ static void func(int k, ubyte *restrict table, long64 idx, bitboard occ, int *re
   int pt2[MAX_PIECES]; \
   bitboard occ, bb; \
   int n = numpcs; \
-  assume(n >= 3 && n <= 6); \
+  assume(n >= 3 && n <= 7); \
   assume(numpawns > 0); \
   int king, wtm; \
   ubyte *restrict table; \
@@ -322,7 +322,7 @@ static void func(int k, ubyte *restrict table, long64 idx, bitboard occ, int *re
   int pt2[MAX_PIECES]; \
   bitboard occ, bb; \
   int n = numpcs; \
-  assume(n >= 3 && n <= 6); \
+  assume(n >= 3 && n <= 7); \
   int king, opp_king, wtm; \
   ubyte *restrict table; \
   int *restrict pcs; \
@@ -348,7 +348,7 @@ static void func(int k, ubyte *restrict table, long64 idx, bitboard occ, int *re
   int p[MAX_PIECES]; \
   bitboard occ, bb; \
   int n = numpcs; \
-  assume(n >= 3 && n <= 6); \
+  assume(n >= 3 && n <= 7); \
   int king; \
   ubyte *restrict table; \
   int *restrict pcs; \
@@ -370,7 +370,7 @@ static void func(int k, ubyte *restrict table, long64 idx, bitboard occ, int *re
   int pt2[MAX_PIECES]; \
   bitboard occ, bb; \
   int n = numpcs; \
-  assume(n >= 2 && n <= 6); \
+  assume(n >= 2 && n <= 7); \
   int wtm; \
   ubyte *restrict table; \
   int *restrict pcs; \
@@ -394,7 +394,7 @@ static void func(int k, ubyte *restrict table, long64 idx, bitboard occ, int *re
   int p[MAX_PIECES]; \
   bitboard occ, bb; \
   int n = numpcs; \
-  assume(n >= 2 && n <= 6); \
+  assume(n >= 2 && n <= 7); \
   ubyte *restrict table; \
   int *restrict pcs; \
   long64 end = thread->end; \
@@ -493,7 +493,7 @@ static void func(int k, ubyte *restrict table, long64 idx, bitboard occ, int *re
   long64 idx, idx2; \
   int i; \
   int n = numpcs; \
-  assume(n >= 2 && n <= 6); \
+  assume(n >= 2 && n <= 7); \
   bitboard occ, bb = thread->occ; \
   int *p = thread->p; \
   long64 end = begin + thread->end
@@ -505,7 +505,7 @@ static void func(int k, ubyte *restrict table, long64 idx, bitboard occ, int *re
   long64 idx, idx2; \
   int i; \
   int n = numpcs; \
-  assume(n >= 2 && n <= 6); \
+  assume(n >= 2 && n <= 7); \
   bitboard occ; \
   int p[MAX_PIECES]; \
   long64 end = thread->end
