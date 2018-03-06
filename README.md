@@ -2,10 +2,11 @@
 
 Included are a tablebase generator and probing code for adding tablebase
 probing to a chess engine. The tablebase generator is able to generate
-all tablebases for up to 6 pieces.
+all tablebases for up to 6 pieces. 7 in progress.
 
 Requirements for the generator:
 * 16 GB of RAM for 6-piece tables (much less for 5-piece tables).
+* 1 TB of RAM for 7 piece
 * x86-64 CPU.
 * 64-bit OS.
 * Sufficiently recent gcc (producing 64-bit executables).
